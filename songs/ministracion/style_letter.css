@@ -1,0 +1,29 @@
+.chord {
+    color: red;
+}
+.chordA{
+    color: green;
+}
+
+.cuerpo {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+    text-shadow: 2px 2px 5px gray;
+    color: #333;
+}
+
+.titulo {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+    text-shadow: 2px 2px 5px gray;
+    color: #cf3b3b;
+
+}
