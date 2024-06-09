@@ -108,7 +108,12 @@ header nav {
     margin: 0;
 } */
 
-body{font-family: Verdana, 'Lucida Grande';}
+body{
+  font-family: Verdana, 'Lucida Grande';
+  /*background-color: #f4f4f4;*/
+  background-color: #f4f4f48f;
+
+}
 #menu ul, #menu li, #menu a {margin: 0;padding: 0;}
 #menu ul {list-style: none;}
 #menu a {text-decoration: none;}
@@ -223,27 +228,32 @@ body{font-family: Verdana, 'Lucida Grande';}
   color: #f0f0f0;
 }
 
-/* Para la letras*/
 
-.column {
-    flex: 1;
-    min-width: 45%;
-    padding: 10px;
-    box-sizing: border-box;
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
 }
 
-.chords {
-    white-space: pre-wrap;
-    background-color: #f4f4f4;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-family: monospace;
+.song {
+  background: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.chord {
-    color: red;
+#iframeContainer {
+  position: relative; /* Agrega posición relativa para que el div contenedor controle la posición del iframe */
+  width: 425px; /* Ajusta el ancho al del iframe */
+  height: 350px; /* Ajusta el alto al del iframe */
+  cursor: pointer; /* Cambia el cursor al hacer clickeable */
 }
-.chordA{
-    color: green;
+
+#iframeContent {
+  position: absolute; /* Establece el iframe como posición absoluta para que ocupe todo el espacio del div contenedor */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
