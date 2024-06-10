@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santo Espíritu</title>
+    <link rel="stylesheet" href="style_letter.css">
+    <style>
+        .hidden-content {
+            display: none;
+        }
+        .show-more {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h2 class="titulo">Santo Espíritu</h2>
+<pre class="chords">
+    <p class="cuerpo">
+        <span class="chord">A</span> -- <span class="chord">D</span>
+        No hay más valor, nada se acercará
+        No hay comparación, mi esperanza está
+        En tu presencia Dios
+        <span class="hidden-content">
+            <span class="chord">A</span> -- <span class="chord">D</span> -- <span class="chord">Bm</span>
+            Santo Espíritu ven hoy aquí
+            Inúndanos, queremos más de ti
+            Tu gloria Dios hoy anhelamos ver
+            Y poder responder a tu presencia Dios
+            <span class="chord">A</span> -- <span class="chord">D</span>
+            Me has dado a probar el más dulce amor
+            Donde hay libertad y no hay condenación
+            En tu presencia Dios
+            <span class="chord">A</span> -- <span class="chord">D</span> -- <span class="chord">Bm</span>
+            Santo Espíritu ven hoy aquí
+            Inúndanos, queremos más de ti
+            Tu gloria Dios hoy anhelamos ver
+            Y poder responder a tu presencia Dios
+            <span class="chord">A</span> -- <span class="chord">D</span> -- <span class="chord">Bm</span>
+            Permítenos conocer tu presencia
+            Revélanos más y más de tu gloria
+        </span>
+        <span id="show-more" class="show-more"> Mostrar más </span>
+    </p>
+</pre>
+
+<script>
+    document.getElementById("show-more").onclick = function() {
+        var dots = document.getElementsByClassName("hidden-content");
+        var showMore = document.getElementById("show-more");
+
+        for (var i = 0; i < dots.length; i++) {
+            if (dots[i].style.display === "none") {
+                dots[i].style.display = "inline";
+                showMore.innerHTML = "Mostrar menos";
+            } else {
+                dots[i].style.display = "none";
+                showMore.innerHTML = "Mostrar más";
+            }
+        }
+    };
+</script>
+
+</body>
+</html>
+
+

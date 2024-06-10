@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <style>
+      a {text-decoration:none}
+  </style>
+</head>
+<body>
+
+    <div class="song">
+
+        <div id="iframeContainer" onclick="openMenu()">
+            <iframe id="iframeContent" width="425" height="350" 
+            src="como_en_el_cielo.html">
+        </iframe>
+        </div>
+
+    </div>
+
+
+
+<a href='como_en_el_cielo.html'>
+    Añadir.html en esta pestaña usando el enalce HTML
+</a>
+<br/><br />
+<a href='santo_espiritu.html' target='_blank'>Añadir.html usando el enlace HTML</a>
+<br /><br />
+<a onclick='anadirPestana()'>Añadir html en otra pestaña desde Javascript</a>
+<br /><br />
+<a onclick='anadirPestanaDisco()'>Añadir html en otra pestaña desde Javascript y desde una carpeta realativa</a>
+<br /><br />
+<a onclick='anadirPestanaDiscoAbsoluta()'>Añadir html en otra pestaña desde Javascript y con una ruta absoluta (de mi disco)</a>
+
+
+<script>
+function anadirPestana(){
+window.open("Dios_de_lo_imposible", '_blank');
+}
+
+function anadirPestana(){
+window.open("Dios_de_lo_imposible", '_blank');
+}
+
+function anadirPestanaDisco(){
+    window.open("Dios_de_lo_imposible", '_blank');
+}
+
+function anadirPestanaDiscoAbsoluta(){
+    window.open("Dios_de_lo_imposible", '_blank');}
+
+</script>
+
+</body>
+</html>

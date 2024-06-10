@@ -1,0 +1,8 @@
+.hidden-content {
+    display: none;
+}
+.show-more {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
