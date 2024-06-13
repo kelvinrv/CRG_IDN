@@ -114,15 +114,20 @@ body{
   background-color: #f4f4f48f;
 
 }
-#menu ul, #menu li, #menu a {margin: 0;padding: 0;}
+#menu ul, #menu li, #menu a {margin: 0; padding: 0;}
 #menu ul {list-style: none;}
 #menu a {text-decoration: none;}
 #menu {
   height: 40px;
-  background-color: #232323;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+  /*background-color: #232323;*/
+
+  background-color: #06065a97;
+  /*box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);*/
+  box-shadow: 0px 2px 3px rgba(243, 155, 155, 0.4);
   width: 500px;
-  margin: 0 auto;
+  height: 40px;
+  margin: -60px auto;
+  /*margin: 0 auto;*/
 }
 #menu > ul > li {
   float: left;
@@ -130,8 +135,9 @@ body{
   position: relative;
 }
 #menu > ul > li > a {
-  color: #a0a0a0;
-  font-size: 15px;
+  /*color: #a0a0a0;*/
+  color: #cac9c7;
+  font-size: 18px;
   line-height: 40px;
   padding: 11px 20px;
   -webkit-transition: color .15s;
@@ -140,11 +146,11 @@ body{
   -o-transition: color .15s;
   transition: color .15s;
 }
-#menu > ul > li > a:hover {color: #ffffff;}
+#menu > ul > li > a:hover {color: #fca740;}
 #menu > ul > li > ul {
   opacity: 0;
   visibility: hidden;
-  padding: 16px 0 20px 0;
+  padding: 18px 0 20px 0;
   background-color: #fafafa;
   text-align: left;
   position: absolute;
@@ -232,6 +238,8 @@ body{
 .container {
   width: 100%;
   margin: auto;
+  padding: 50px;
+  text-align: center;
   overflow: hidden;
 }
 
@@ -259,6 +267,71 @@ body{
 }
 
 .footer{
-  width: 100% !important;
-  height: 420px !important;
+  width: 400px !important;
+  height: 200px !important;
+}
+
+.logo {
+  display: block;
+  margin-left: 200px;
+  margin-right: auto;
+  width: 150px; /* Puedes ajustar el porcentaje según lo necesites */
+}
+
+/* === Paragraphs ===*/
+.chord {
+  color: red;
+}
+.chordA{
+  color: green;
+}
+
+
+.cuerpo {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-align: center;
+  text-shadow: 2px 2px 5px gray;
+  color: #333;
+}
+
+
+.titulo {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  margin: 2px;
+  padding: 0px;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px 5px gray;
+  color: #cf3b3b;
+
+}
+
+.box {
+  width: 500px;
+  padding: 0px;
+  margin: 50px auto;
+  text-align: left;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  border: 3px solid #328BE9;
+
+}
+
+.box-paragraph {
+  font-size: 16px;
+  text-align: center;
+  
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+  padding: 40px;
+  cursor: pointer;
 }

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa del Rey de Gloria</title>
+    <img src="images/images.png" alt="Welcome Image" class="logo">
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
@@ -40,36 +42,53 @@
     </div>
 </section>
 
-<div id="songs"></div>
+<div class="song">
 
-<div class="container">
-    <section id="ministracion">
-        <div class="song">
-
-            <div id="iframeContainer" onclick="openMenu()">
-                <iframe id="iframeContent" width="425" height="350" 
-                src="songs/ministracion/como_en_el_cielo.html">
-            </iframe>
-            </div>
-
+        <div id='como_en_el_cielo' class="box" onclick="openNewPage(id)">
+            <p class="box-paragraph"> 
+                <span class="titulo">Como en el Cielo</span>    
+                    <p class="cuerpo">
+                    //La atmósfera cambiando está. 
+                    Tu espíritu está aquí
+                    Es evidente tu mover. 
+                    Tu espíritu está aquí//
+                    <a href="songs/ministracion/como_en_el_cielo.html" class="link">Haz clic aquí para ver más.</a>    
+                </p> 
+            </p>
         </div>
 
-        <div class="song">
+        <div id='Dios_de_lo_imposible' class="box" onclick="openNewPage(id)">
+            <p class="box-paragraph"> 
+                    <span class="titulo">Dios de lo imposible</span>    
+                    <p class="cuerpo">
+                        Jesucristo, reinas con poder
+                        Soberano, victorioso rey
+                        Ni la muerte pudo detener
+                        Tu poder para vencer        
+                    <a href="songs/ministracion/Dios_de_lo_imposible.html" class="link">Haz clic aquí para ver más.</a>    
+                </p>
+                    
+            </p>
         </div>
-            <iframe id="foo" width="425" height="350"
-                src="songs/ministracion/santo_espiritu.html">
-            </iframe>
-            
-            <iframe class="foo" width="425" height="350"
-                src="songs/ministracion/Dios_de_lo_imposible2.html">
-            </iframe>
+
+        <div id='no_hay_lugar_mas_alto' class="box" onclick="openNewPage(id)">
+            <p class="box-paragraph"> 
+                    <span class="titulo">No hay lugar más alto</span>    
+                    <p class="cuerpo">
+                        A tus pies arde mi corazón
+                        A tus pies entrego lo que soy
+                        Ese lugar de mi seguridad
+                        Donde nadie me puede señalar                          
+                    <a href="songs/ministracion/no_hay_lugar_mas_alto.html" class="link">Haz clic aquí para ver más.</a>    
+                </p>
+                    
+            </p>
         </div>
 
-    </div>       
-    </section>
+</div>
 
 
-<script src="show.js">
+<script src="scripts.js">
 </script>
 </body>
 </html>

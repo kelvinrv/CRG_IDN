@@ -12,3 +12,7 @@ document.getElementById("show-more").onclick = function() {
         }
     }
 };
+
+function openNewPage() {
+    window.location.href = 'new_page.html';
+}
