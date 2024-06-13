@@ -242,6 +242,13 @@ body{
   text-align: center;
   overflow: hidden;
 }
+.song-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
 
 .song {
   background: #fff;
